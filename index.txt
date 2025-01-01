@@ -8,7 +8,7 @@ Exclusive Black Friday ! Offer
 10 
 Days
 
-Follow us on :
+    Follow us on :
 
 <ion-icon name="logo-facebook"></ion-icon>
 <ion-icon name="logo-twitter"></ion-icon>
