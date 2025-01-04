@@ -119,10 +119,7 @@ body {
     font-size: var(--fs-7);
     line-height: 1.5;
 }
-
+/* меняет поведение элемента при фокусе на нем */
 :focus-visible {outline-offset: 4px;}
-
-
-  
 
 
