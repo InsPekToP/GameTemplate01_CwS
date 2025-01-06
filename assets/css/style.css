@@ -123,3 +123,85 @@ body {
 :focus-visible {outline-offset: 4px;}
 
 
+/* REUSED STYLE */
+
+.container{padding-inline: 15px;}
+
+/* HEADER */
+.header-top,
+.navbar,
+.cart-btn,
+.header-bottom::before,
+.navbar-link::before {display: none;}
+
+.header {
+    position: relative;
+    min-height: 1px;
+}
+
+.header-bottom {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    background-color: var(--raisin-black-2);
+    padding-block: 20px;
+    z-index: 4;
+}
+
+.header-bottom.active {
+    position: fixed;
+    top: -85px;
+    animation: sladeIn 0.5s var(--cubic-out) forwards;
+}
+
+@keyframes sladeIn {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(100%);}
+}
+
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-family: var(--ff-oxanium);
+    font-size: 3rem;
+    font-weight: var(--fw-800);
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-btn {
+    color: var(--marigold);
+    padding: 13px;
+    box-shadow: var(--shadow-1);
+    border-radius: 4px;
+}
+
+.search-btn ion-icon { --ionicon-stroke-width: 80px;}
+
+.nav-toggle-btn {
+    color: var(--white);
+    font-size: 30px;
+    border: 1px solid var(--white);
+    padding: 4px;
+}
+
+.nav-toggle-btn.active .menu,
+.nav-toggle-btn .close {
+    display: none;
+
+
+}
+.nav-toggle-btn .menu,
+.nav-toggle-btn.active .close {
+    display: block;
+}
