@@ -1,3 +1,5 @@
+//NAVBAR
+
 'use strict';
 
 const navbar = document.querySelector("[data-navbar]");
@@ -12,7 +14,34 @@ navbarToggler.addEventListener("click", function () {
 
 for (let i= 0; i<navbarLinks.length; i++){
     navbarLinks[i].addEventListener("click", function(){
-        navbar.classList.toggle("active");
-        navbarToggler.classList.toggle("active");
+        navbar.classList.remove("active");
+        navbarToggler.classList.remove("active");
     });
 }
+
+
+
+//SEARCH TOGGLE
+
+const searchToglers = document.querySelectorAll("[data-search-toggler]");
+const searchBox = document.querySelector("[data-search-box]");
+
+for (let i = 0; i<searchToglers.length; i++){
+    searchToglers[i].addEventListener("click", function(){
+        searchBox.classList.toggle("active");
+    });
+}
+
+
+
+// HEADER
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY >= 200){
+        header.classList.add("active");
+    }else{
+        header.classList.remove("active");
+    }
+});
