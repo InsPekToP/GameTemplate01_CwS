@@ -39,7 +39,7 @@ for (let i = 0; i<searchToglers.length; i++){
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function() {
-    if (window.scrollY >= 200){
+    if (window.scrollY >= 700){
         header.classList.add("active");
     }else{
         header.classList.remove("active");

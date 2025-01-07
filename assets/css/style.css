@@ -128,6 +128,21 @@ body {
 
 .container{padding-inline: 15px;}
 
+.section {padding-block: var(--section-paddind) ;}
+
+h1,h2,h3 {
+    color: var(--white);
+    font-family: var(--ff-oxanium);
+    font-weight: var(--fw-800);
+    line-height: 1;
+}
+
+.h1 {
+    font-size: var(--fs-2);
+    letter-spacing: -3px;
+}
+
+
 /* HEADER */
 .header-top,
 .cart-btn,
@@ -304,3 +319,39 @@ body {
     cursor: default;
     z-index: -1;
 }
+
+
+/* HERO */
+
+.hero-banner {
+    display: none;
+}
+
+.hero {
+    --section-paddind: 60px;
+    margin-block-start: 84px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.hero-subtitle {
+    color: var(--marigold);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+}
+
+.hero-title {
+    margin-block: 15px 12px;
+}
+
+.hero-text {
+    color: var(--light-gray-2);
+    margin-block-end: 45px;
+}
+
