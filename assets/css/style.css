@@ -118,7 +118,6 @@ body {
     /* background-color: var(--raisin-black-3); */
     font-size: var(--fs-7);
     line-height: 1.5;
-    height: 300vh;
 }
 /* меняет поведение элемента при фокусе на нем */
 :focus-visible {outline-offset: 4px;}
@@ -141,6 +140,62 @@ h1,h2,h3 {
     font-size: var(--fs-2);
     letter-spacing: -3px;
 }
+
+.h2 {
+    font-size: var(--fs-3);
+}
+
+.h3 {
+    font-size: var(--fs-6);
+    text-transform: uppercase;
+}
+
+:is(.h1, .h2, .h3, .card-price) .span {
+    display: inline-block;
+    color: var(--marigold);
+}
+
+.btn {
+    margin-inline: auto;
+    color: var(--eerie-black-1);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    min-height: 55px;
+    padding-inline: 35px;
+}
+
+.skewBg {
+    position: relative;
+    z-index: 1;
+}
+
+.skewBg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewX(var(--skewX, -16deg));
+    background-color: var(--bg, var(--marigold));
+    z-index: -1;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(100% + 8px);
+    width: 5px;
+    transform: skewX(-16deg) translateX(var(--translateX, 0));
+    background-color: var(--marigold);
+    transition: var(--transition);
+}
+
+.btn:is(:hover, :focus)::after {
+    --translateX: -13px;
+}
+
+
 
 
 /* HEADER */
