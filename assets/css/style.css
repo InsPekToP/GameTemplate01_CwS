@@ -115,7 +115,7 @@ html {
 }
 
 body {
-    /* background-color: var(--raisin-black-3); */
+    background-color: var(--raisin-black-3);
     font-size: var(--fs-7);
     line-height: 1.5;
     height: 300vh;
@@ -217,6 +217,42 @@ h1,h2,h3 {
 .has-scrollbar::-webkit-scrollbar-button {
     width: calc(25% - 40px);
 }
+
+.section-subtitle,
+.section-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: url("../images/title-underline.png");
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scrollbar-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.card-banner {
+    background-color: var(--light-gray-1);
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 
