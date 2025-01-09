@@ -128,7 +128,7 @@ body {
 
 .container{padding-inline: 15px;}
 
-.section {padding-block: var(--section-paddind) ;}
+.section {padding-block: var(--section-padding);}
 
 h1,h2,h3 {
     color: var(--white);
