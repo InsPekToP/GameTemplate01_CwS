@@ -118,7 +118,6 @@ body {
     background-color: var(--raisin-black-3);
     font-size: var(--fs-7);
     line-height: 1.5;
-    height: 300vh;
 }
 /* меняет поведение элемента при фокусе на нем */
 :focus-visible {outline-offset: 4px;}
@@ -1008,3 +1007,48 @@ h1,h2,h3 {
     background-color: var(--white);
 }
 
+
+/* FOOTER */
+
+.footer {
+    color: var(--roman-silver);
+}
+
+.footer-top {
+    padding-block-end: var(--section-paddind);
+}
+
+.footer-top .container {
+    display: grid;
+    gap: 50px;
+}
+
+.footer .logo {
+    margin-block-end: 35px;
+}
+
+.footer-text,
+.footer .contact-item {
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    line-height: 1.8;
+}
+
+.footer-text {
+    margin-block-end: 15px;
+}
+
+.contact-item:not(:last-child) {
+    margin-block-end: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-icon {
+    margin-block-start: 3px;
+    font-size: 17px;
+}
