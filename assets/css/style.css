@@ -1052,3 +1052,45 @@ h1,h2,h3 {
     margin-block-start: 3px;
     font-size: 17px;
 }
+
+.footer-list-title {
+    position: relative;
+    color: var(--silver);
+    font-family: var(--ff-oxanium);
+    text-transform: uppercase;
+    font-weight: var(--fw-800);
+    padding-block-end: 20px;
+    margin-block-end: 35px;
+}
+
+.footer-list-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: var(--marigold);
+}
+
+.footer-link {
+    font-size: var(--fs-9);
+    max-width: max-content;
+    transition: var(--transition);
+    padding-block: 8px;
+    font-weight: var(--fw-500);
+}
+
+.footer-link:is(:hover, :focus) {
+    color: var(--marigold);
+    transform: translateX(5px);
+}
+
+.footer .social-wrapper {
+    margin-block-end: 50px;
+}
+
+.footer .social-list {
+    display: flex;
+    gap: 10px;
+}
