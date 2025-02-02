@@ -34,14 +34,17 @@ for (let i = 0; i<searchToglers.length; i++){
 
 
 
-// HEADER
+// HEADER end BACK TO TOP
 
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", function() {
     if (window.scrollY >= 400){
         header.classList.add("active");
+        backTopBtn.classList.add("active");
     }else{
         header.classList.remove("active");
+        backTopBtn.classList.remove("active");
     }
 });
