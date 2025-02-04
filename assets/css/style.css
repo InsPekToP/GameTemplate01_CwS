@@ -336,7 +336,7 @@ h1,h2,h3 {
     font-weight: var(--fw-800);
 }
 
-.header-action {
+.header-actions {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -1173,4 +1173,43 @@ h1,h2,h3 {
 
 /* MEDIA QUERIES */
 
-/* Small (sm)  576px */
+/* Small (sm) ≥ 576px */
+
+@media (min-width: 576px) {
+    /* REASED STYLE */
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .h1 {--fs-2 :7rem;}
+
+    /* HEADER */
+
+    .header-actions {
+        gap: 40px;
+    }
+
+    .cart-btn {
+        display: block;
+        position: relative;
+        color: var(--white);
+        font-size: 20px;
+    }
+
+    .cart-badge {
+        position: absolute;
+        top: -6px;
+        right: -10px;
+        background-color: var(--marigold);
+        color: var(--eerie-black-1);
+        font-size: var(--fs-11);
+        border-radius: 20px;
+        padding: 3px 5px;
+        line-height: 1;
+        font-weight: var(--fw-800);
+    }
+
+}
