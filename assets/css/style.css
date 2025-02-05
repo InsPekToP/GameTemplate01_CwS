@@ -1212,4 +1212,29 @@ h1,h2,h3 {
         font-weight: var(--fw-800);
     }
 
+
+    /* SEARCH BOX */
+
+    .search-container :is(.search-field, .search-submit) {
+        font-size: var(--fs-3);
+    }
+
+    /* BRAND */
+
+    .brand-item {
+        min-width: calc(33.3% - 13.33px);
+    }
+
+    /* FEATURED GAME */
+
+    .featured-game .scrollbar-item {
+        min-width: 50%;
+    }
+
+    /* BLOG */
+
+    .blog-list {
+        grid-template-columns: 75%;
+        justify-content: center;
+    }
 }
