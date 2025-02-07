@@ -1237,4 +1237,16 @@ h1,h2,h3 {
         grid-template-columns: 75%;
         justify-content: center;
     }
+
+    /* FOOTER */
+
+    .footer-top .container {
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
+
+    .footer-brand,
+    .footer-wrapper {
+        grid-column: 1 / 3;
+    }
 }
