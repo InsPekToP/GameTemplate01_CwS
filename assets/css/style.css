@@ -1015,7 +1015,7 @@ h1,h2,h3 {
 }
 
 .footer-top {
-    padding-block-end: var(--section-paddind);
+    padding-block-end: var(--section-padding);
 }
 
 .footer-top .container {
